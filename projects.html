@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: rgb(3, 3, 3);
+    }
+    .main-container{
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+    }
+    .project-body{
+      width:600px;
+      background-color: rgb(25, 25, 25);
+      padding: 36px;
+      cursor: pointer;
+      transition:transform .2s ;
+      
+    }
+    .project-body:hover{
+      transform: scale(1.1);
+      position: relative;
+      margin-bottom: 0;
+      filter:opacity(80%);
+    }
+    .project-container{
+      display: flex;
+      flex-direction: column;
+      color:white;
+      font-family: sans-serif;
+    }
+    .project-type{
+      font-size:x-small;
+      font-weight:bolder ;
+      letter-spacing: 2px;
+    }
+    .project-description{
+      margin-top: -8px;
+      font-size: 14px;
+      color:rgb(147, 147, 147);
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="project-body">
+      <div class="project-container">
+        <div class="project-type">JAVASCRIPT</div>
+        <div class="project-title"><h2>MERN</h2></div>
+        <div class="project-description">Full stack website using MERN stack</div>
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="project-container">
+        <div class="project-type">JAVASCRIPT</div>
+        <div class="project-title"><h2>MERN</h2></div>
+        <div class="project-description">Full stack website using MERN stack</div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
