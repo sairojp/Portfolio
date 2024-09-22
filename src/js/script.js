@@ -8,7 +8,7 @@
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+        alert('button clicked')
         const serviceID = 'service_58igqws';
         const templateID = 'template_t4kfbxf';
         
