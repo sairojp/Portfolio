@@ -15,15 +15,12 @@
         const emailValue = email.value.trim().toLowerCase()
 
         if (emailValue === '') {
-            // mostrar erro
-            // add classe
             setErrorFor('Empty Field')
             email.focus()
         } else if (!checkEmail(emailValue)) {
             setErrorFor('Sorry, invalid format')
             email.focus()
         } else {
-            // adicionar a classe de sucesso
             setSuccessFor()
         }
     }
