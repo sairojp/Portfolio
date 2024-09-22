@@ -1,43 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sairoj Prasai</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-<body>
-  <div class="main-body">
-    <div class="profile">
-      <div class="profilepic">
-        <img src="user.jpg" class="pic" >
-      </div>
-      <div class="user-name"><h1>Sairoj Prasai</h1></div>
-      <div class="description"><h2>&lt;Hello World&#47&gt;</h2></div>
-      <div class="icon-tray">
-        <i class="icons fa-brands fa-facebook" style="color: #ffffff;"></i> 
-        <i class="icons fa-brands fa-square-github" style="color: #ffffff;"></i>
-        <i class="icons fa-brands fa-square-instagram" style="color: #ffffff;"></i>
-        <i class="icons fa-regular fa-envelope" style="color: #ffffff;"></i>
-        <i class="icons fa-brands fa-linkedin" style="color: #ffffff;"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container-body">
+      
+      <header>
+        <div class="logo">
+          <a class="logo" href ="">&lt;sairoj/&gt;</a></div>
+        <div class="socials">
+          <a href="https://github.com/sairojp"><img src="./src//images/icon-github.svg" alt="" /></a>
+          <a href="https://www.linkedin.com/in/sairoj-prasai-74902a2b2/"><img src="./src//images/icon-linkedin.svg" alt="" /></a>
+          <a href="#"><img src="./src//images/icon-twitter.svg" alt="" /></a>
+        </div>
+      </header>
+     
+      <main>
+        <section class="hero-section">
+          <!-- <div class="author-photo">
+            <picture>
+              <source
+                media="(min-width:992px)"
+                srcset="./src//images/image-profile-desktop.webp"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="./src//images/image-profile-tablet.webp"
+              />
+              <img src="./src//images/image-profile-tablet.webp" alt="" />
+            </picture>
+          </div> -->
+          
+          <div class="hero-content">
+            <h1>
+              <span style="display: block;">&lt;Hello World/&gt;</span>
+              <span> I'm</span>
+              <span class="h1-author-name">Sairoj Prasai</span>
+            </h1>
+            <p>
+              Software Engineer passionate about
+              learning 0s and 1s.
+            </p>
+            <a href="#contact">Contact me</a>
+            <div class="a-underline"></div>
+          </div>
+          <div class="hero-underline-outside">
+            <div class="hero-underline"></div>
+          </div>
+        </section>
         
-      </div>
-      <div class="button-container"><button>Explore</button></div>
-      <div><i class=" laptop fa-solid fa-laptop-code fa-2xl" style="color: #ffffff;"></i></div>
-      <hr>
-      <div class="footer">
-        <div class="footer-text">Sairoj Prasai &#169; 2023</div>
-      </div>
+        
+        <section id="skills">
+          <div class="container-skills">
+            <div class="skill-item">
+              <h1>HTML</h1>
+            </div>
+            <div class="skill-item">
+              <h1>CSS</h1>
+            </div>
+            <div class="skill-item">
+              <h1>JavaScript</h1>
+            </div>
+            <div class="skill-item">
+              <h1>MERN</h1>
+            </div>
+            <div class="skill-item">
+              <h1>React</h1>
+            </div>
+            <div class="skill-item">
+              <h1>Tailwind</h1>
+            </div>
+            <div class="skill-item">
+              <h1>Python</h1>
+            </div>
+            <div class="skill-item">
+              <h1>Django</h1>
+            </div>
+            
+            
+            
+          </div>
+        </section>
+        <div class="contact-underline-outside">
+          <div class="contact-underline"></div>
+        </div>
+        
+        
+        <section id="projects">
+          <div class="container-projects">
+            <div class="projects-title">
+              <div class="container-projects-title-a">
+                <h1>Projects</h1>
+                <div class="a">
+                  <a href="#contact">Contact me</a>
+                  <div class="underline-projects-a"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="items-project-container">
+              <div class="item-project">
+                <picture>
+                  <a href="https://github.com/sairojp/You-Tify"><img src="./src/images/youtify.png" alt="" /></a>
+                  
+                </picture>
+                <div class="text-project">
+                  <h2>YOU-TIFY</h2>
+                  <p>
+                    Web app to transfer your playlist from youtube to your spotify account 
+                  </p>
+                  <div class="github">
+                    <a href="https://github.com/sairojp/You-Tify"><img src="./src//images/icon-github.svg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="item-project">
+                <picture>
+                  <a href="https://github.com/sairojp/wePark-LPR"><img src="./src/images/wepark.png" alt="" /></a>
+                </picture>
+                <div class="text-project">
+                  <h2>wePark</h2>
+                  <p>
+                    Monitoring of parking lot with entry and exit time tracking with Real time license plate detection using object detection 
+                  </p>
+                   <div class="github">
+                    <a href="https://github.com/sairojp/wePark-LPR"><img src="./src//images/icon-github.svg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="item-project">
+                <picture>
+                  <a href="https://github.com/sairojp/MERN-FE"><img src="./src/images/aspirantnet.png" alt="" /></a>
+                </picture>
+                <div class="text-project">
+                  <h2>AspirantNet</h2>
+                  <p>
+                    Social media app use to post and search about jobs implemented in MERN 
+                  </p>
+                   <div class="github">
+                     
+                    <a href="https://github.com/sairojp/MERN-FE"><img src="./src/images/icon-github.svg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+              <!-- item 3 -->
+              
+              <!-- item 4 -->
+              <div class="item-project">
+                <picture>
+                  <a href="https://github.com/sairojp/CryptoWatch"><img src="./src/images/cryptowatch.png" alt="" /></a>
+                </picture>
+                <div class="text-project">
+                  <h2>CryptoWatch</h2>
+                  <p>
+                    Basic web app to monitor cryptocurrency via data scraping
+                  </p>
+                   <div class="github">
+                    <a href="https://github.com/sairojp/CryptoWatch"><img src="./src//images/icon-github.svg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="item-project">
+                <picture>
+                  <a href="https://github.com/sairojp/HTML-CSS"><img src="./src/images/youtube-clone.png" alt="" /></a>
+                </picture>
+                <div class="text-project">
+                  <h2>Youtube Clone</h2>
+                  <p>
+                    Basic UI clone of Youtube using HTML and CSS
+                  </p>
+                   <div class="github">
+                     
+                    <a href="https://github.com/sairojp/HTML-CSS"><img src="./src//images/icon-github.svg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="item-project">
+                <picture>
+                  <a href="https://github.com/sairojp/Javascript"><img src="./src/images/amazon.png" alt="" /></a>
+                </picture>
+                <div class="text-project">
+                  <h2>Amazon Clone</h2>
+                  <p>
+                    Basic Clone of Amazon using HTML, CSS and Javascript
+                  </p>
+                   <div class="github">
+                     
+                    <a href="https://github.com/sairojp/Javascript"><img src="./src//images/icon-github.svg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <div class="wrapper">
+          <section id="contact">
+            <div class="container-contact">
+              <div class="contact-text">
+                <h1>Contact</h1>
+                <p>
+                  I would love to hear about your project and how I could help.
+                  Please fill in the form, and I'll get back to you as soon as
+                  possible.(Currently In work)
+                </p>
+              </div>
+              <div class="contact-form">
+                <form id="form" action="" method="">
+                  <div class="form-control">
+                    <input type="text" id="name" placeholder="Name" />
+                  </div>
+                  <div class="form-control">
+                    <input type="email" id="email" placeholder="Email" />
+                    <small>error message</small>
+                  </div>
+                  <div class="form-control">
+                    <textarea id="message" cols="30" placeholder="Message"></textarea>
+                  </div>
+                  <div class="form-control">
+                    <input
+                      class="submit-btn"
+                      type="submit"
+                      id="input-submit"
+                      value="send message"
+                    ></input>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="contact-underline-outside">
+              <div class="contact-underline"></div>
+            </div>
+          </section>
+          
+          <footer class="footer-socials">
+            <div class="footer-text"> © sairojp </div>
+            <div class="socials">
+              <a href="https://github.com/sairojp"><img src="./src//images/icon-github.svg" alt="" /></a>
+              <a href="https://www.linkedin.com/in/sairoj-prasai-74902a2b2/"><img src="./src//images/icon-linkedin.svg" alt="" /></a>
+              <a href="#"><img src="./src//images/icon-twitter.svg" alt="" /></a>
+            </div>
+          </footer>
+        </div>
+        
+      </main>
     </div>
-  </div>
-  
-  
-</body>
+    <script src="./src/js/script.js" ></script>
+  </body>
 </html>
