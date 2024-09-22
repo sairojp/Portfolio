@@ -1,6 +1,6 @@
 (function () {
     "use strict"; 
-
+    console.log('js');
     emailjs.init('_Wt5U4aG0KZ6g6ZFj');  
 
     const form = document.querySelector('#form');
