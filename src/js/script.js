@@ -1,40 +1,56 @@
- (function () {
-    'strict mode'
-    const form = document.querySelector('#form')
-    const email = document.querySelector('#email')
-    const name = document.querySelector('#name')
-    const message = document.querySelector('#message')
-    const formControl = document.querySelectorAll('#form .form-control')
+(function () {
+    "use strict"; 
+
+    emailjs.init('_Wt5U4aG0KZ6g6ZFj');  
+
+    const form = document.querySelector('#form');
+    const formControl = document.querySelectorAll('#form .form-control');
 
     form.addEventListener('submit', (e) => {
-        e.preventDefault()
-        checkInputs()
-    })
+        e.preventDefault();
+        
+        const serviceID = 'service_58igqws';
+        const templateID = 'template_t4kfbxf';
+        
+        // Check inputs before sending
+        if (checkInputs.call(form)) {
+            emailjs.sendForm(serviceID, templateID, form)
+                .then(() => {
+                    alert('Message sent successfully!');
+                    form.reset(); // reset the form after submission
+                }, (err) => {
+                    alert(JSON.stringify(err));
+                });
+        }
+    });
 
     function checkInputs() {
-        const emailValue = email.value.trim().toLowerCase()
+        const emailValue = this.email.value.trim().toLowerCase();
 
         if (emailValue === '') {
-            setErrorFor('Empty Field')
-            email.focus()
+            setErrorFor('Empty Field');
+            this.email.focus();
+            return false; // Prevent sending if there is an error
         } else if (!checkEmail(emailValue)) {
-            setErrorFor('Sorry, invalid format')
-            email.focus()
+            setErrorFor('Sorry, invalid format');
+            this.email.focus();
+            return false; // Prevent sending if there is an error
         } else {
-            setSuccessFor()
+            setSuccessFor();
+            return true; // Allow sending if all checks pass
         }
     }
 
     function setErrorFor(message) {
-        const small = formControl[1].querySelector('small')
-        formControl[1].className = 'form-control error'
-        small.innerText = message
-        console.log('error')
+        const small = formControl[1].querySelector('small');
+        formControl[1].className = 'form-control error';
+        small.innerText = message;
+        console.log('error');
     }
 
     function setSuccessFor() {
-        for (let i = 0; i <= 2; i++) {
-            formControl[i].className = 'form-control success'
+        for (let i = 0; i < formControl.length; i++) {
+            formControl[i].className = 'form-control success';
         }
     }
 
@@ -43,4 +59,4 @@
         let re = /\S+@\S+\.\S+/;
         return re.test(email);
     }
-})()
+})();
