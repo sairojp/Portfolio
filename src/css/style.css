@@ -186,17 +186,17 @@ footer {
 }
 
 .author-photo {
-  z-index: -1;
   width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 7rem;
+  left: 1rem;
+  bottom:-4rem;
   display: flex;
   justify-content: center;
 }
 
 picture {
-  width: 10.875rem;
+  width: 25rem;
   z-index: 1;
 }
 
@@ -565,6 +565,7 @@ textarea {
   .author-photo {
     width: 100%;
     position: absolute;
+    top:12rem;
     justify-content: flex-end;
   }
 
@@ -836,7 +837,7 @@ textarea {
     left: 0;
     top: 10.5rem;
     text-align: start;
-    max-width: 44.125rem;
+    max-width: 40.125rem;
   }
 
   .hero-content>h1 {
